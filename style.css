@@ -1,0 +1,884 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  width: auto;
+  padding: 0.3rem 1rem;
+}
+
+/* ........navbar........ */
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #171c1f;
+  padding: 1rem;
+  z-index: 99;
+  box-shadow: black 3px 2px 10px;
+}
+
+.logo {
+  float: left;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 5px 0;
+  display: block;
+}
+
+.nav-links {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  color: #c95e5e;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content a {
+  color: #000;
+}
+
+.sub_product {
+  text-transform: uppercase;
+}
+
+.sub-dropdown {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cdcd;
+  position: relative;
+  display: block;
+  grid-gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sub-dropdown ul li {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  width: 300px;
+  position: absolute;
+  background-color: #f0d9d9;
+  color: #171c1f;
+  padding: 10px;
+  list-style: none;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* .......slider........ */
+
+
+body {
+  background: #d3cdcd;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 6rem;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.img {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.img img {
+  width: 100%;
+}
+
+.img .text {
+  position: absolute;
+  color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.text h4 {
+  font-size: 1rem;
+  font-weight: 900;
+  font-style: italic;
+
+}
+
+
+/* .....cursor...... */
+/* #cursor {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(184, 46, 80);
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+} */
+/* 
+#cursor-blur {
+  height: 400px;
+  width: 400px;
+  background-color: #c11e2c65;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(50px);
+  z-index: 9;
+} */
+
+/*......... about us........ */
+
+.about {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cdcd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 5rem;
+  margin-top: 50px;
+
+}
+
+.about_img {
+  width: 40%;
+  height: 100%;
+  margin-right: 30px;
+}
+
+.about_img img {
+  width: 100%;
+  height: 70%;
+  border-radius: 40%;
+}
+
+.about_text {
+  width: 60%;
+  height: 100%;
+  /* text-align: center; */
+  line-height: 2rem;
+  padding: 0.7 5rem;
+}
+
+.about_text h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.about_text p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+button {
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  color: #d32a2a;
+  background-color: #d32a2a;
+  border: none;
+  border-radius: 8px;
+  margin: 15px 0px;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* .......product..... */
+
+.product {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cdcd;
+  position: relative;
+  display: flex;
+  grid-gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.box {
+  width: 30rem;
+  height: 25rem;
+  border-radius: 2rem;
+  position: relative;
+  transition: 1s;
+
+}
+
+.box:hover {
+  margin-bottom: 5rem;
+  box-shadow: #171c1f 40px 30px 50px;
+}
+
+
+.box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+/* .........contact us.......... */
+
+
+
+.contact_us {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact_sorce {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 4rem;
+  padding: 0.5rem 2rem;
+  /* background-color: #95c11e; */
+
+}
+
+.contact_box {
+  width: 25rem;
+  height: 12rem;
+  border-radius: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.squre {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  background-color: #d32a2a;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.squre i {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+/* .......certificat....... */
+.certificat {
+  height: fit-content;
+  margin-bottom: 3rem;
+}
+
+.certificats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs img {
+  width: 15rem;
+  height: 20rem;
+  margin: 1rem;
+}
+
+
+/* ......form...... */
+
+
+.container-footer {
+  width: 100%;
+}
+
+.contact_form {
+  width: 100%;
+  /* height: 60%; */
+  padding: 0.5rem 2rem;
+  display: flex;
+  border: black 2px;
+}
+
+.form_div {
+  width: 50%;
+  border: #000 3px;
+}
+
+.form-floating {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem 2rem;
+  margin: 1rem 1rem;
+}
+
+.rowg-3 {
+  width: 100%;
+  /* height: 60%; */
+}
+
+.col-md-6 {
+  display: flex;
+  width: 100%;
+}
+
+.col-md-6 input {
+  width: 5rem;
+}
+
+.rowg-3 input {
+  width: 100%;
+  height: 3rem;
+}
+
+.rowg-3 textarea {
+  width: 100%;
+  /* height: 2rem; */
+}
+
+.rowg-3 label {
+  display: none;
+}
+
+.col-12 {
+  display: 0 0 flex;
+  width: 100%;
+}
+
+.btn {
+  width: 9rem;
+  height: 3rem;
+  color: #fff;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  padding: 1rem 1rem;
+
+}
+
+/* ......footer........ */
+
+.footercatption {
+  width: 100%;
+  height: fit-content;
+  background-color: #171c1f;
+  color: #f0d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info {
+  width: 15rem;
+  height: 24rem;
+  margin-left: 2rem 4rem;
+  display: block;
+  align-items: center;
+  padding: 0.7rem 1rem;
+}
+
+.info h4 {
+  color: #b14242;
+  font-size: 1.5rem;
+}
+
+.info a {
+  text-decoration: none;
+  color: #f0d9d9;
+}
+
+.copyright {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  background-color: #1f1e1e;
+}
+
+.discription {
+  font-size: 1rem;
+  width: 30%;
+  padding: 0.7rem 2rem;
+}
+
+.links {
+  width: 40%;
+  color: #c95e5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a i {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.7rem 3rem;
+  color: #c95e5e;
+}
+
+.copyrit {
+  font-size: 1rem;
+  width: 30%;
+  text-align: right;
+  padding: 0.7rem 2rem;
+}
+
+.copyrit p a {
+  text-decoration: none;
+  color: #b14242;
+}
+
+
+
+/* .........product pages......... */
+
+.spice_box {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cdcd;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  margin-top: 3rem;
+
+}
+
+.sbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sboxes {
+  width: 16rem;
+  height: 16rem;
+  margin: 2rem;
+  border-radius: 5rem 3rem;
+  background-color: #c95e5e;
+  box-shadow: #221c1c 1rem 1rem 2rem;
+}
+
+.sboxes {
+  position: relative;
+  width: 100%;
+}
+
+.sboxes img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem 3rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.sboxes .sub_tbox {
+  position: absolute;
+  color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sub_tbox h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(130, 234, 241);
+}
+
+.textbox h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #b14242;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  /*......... about us........ */
+
+  .about {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .about_img {
+    display: flex;
+    width: 100%;
+    padding: 2rem 5rem;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+  }
+
+
+.about_text {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding: 1rem;
+  margin-top: -2rem;
+  overflow: hidden;
+
+}
+
+.about_text h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+
+.about_text p {
+  font-size: 1rem;
+   line-height: 19px;
+}
+
+/* .......product..... */
+
+.product {
+  width: 100%;
+  height: 100%;
+  display: block;
+  grid-gap: 1rem;
+  padding: 3rem 2rem;
+  
+}
+.box {
+  width: 100%;
+  height: 20rem;
+  margin: 1rem 1rem;
+}
+
+.box:hover {
+  margin-bottom: 5rem;
+  box-shadow: #171c1f 40px 30px 50px;
+}
+
+
+.box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  padding: 0.7rem 1rem ;
+}
+
+/* .......certificat....... */
+
+.certificat {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+.certificats {
+  width: 100%;
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs {
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+
+.imgs img {
+ width: 80%;
+ height: 100%;
+ border: ridge 10px #171c1f;
+}
+
+/* .........contact us.......... */
+
+
+.contact_sorce {
+  grid-gap: 2rem;
+}
+.contact_box {
+  width: 100%;
+}
+
+/* .....form and map ........ */
+
+.container-footer {
+  width: 100%;
+}
+
+.contact_form {
+  display:block;
+  padding: 0;
+
+}
+
+.form_div {
+  width: 100%;
+  border: #000 3px;
+}
+
+.form-floating {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem 2rem;
+  margin: 1rem 1rem;
+}
+
+.rowg-3 {
+  width: 100%;
+}
+
+.col-md-6 {
+  display: block;
+  width: 100%;
+}
+
+.col-md-6 input {
+  width: 100%;
+  width: 6rem;
+}
+
+.rowg-3 input {
+  width: 100%;
+  height: 3.5rem;
+}
+
+.map{
+  width: 100%;
+  height: 100%;
+}
+
+iframe{
+  width: 100%;
+  height: 70%;
+}
+
+/* ......footer........ */
+
+.footercatption {
+  width: 100%;
+  height: fit-content;
+  display: block;
+}
+
+.info {
+  width: 100%;
+    height: fit-content;
+    display: block;
+    align-items: center;
+    padding: 0.7rem 2rem;
+}
+
+.copyright {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  background-color: #1f1e1e;
+}
+
+.discription {
+  font-size: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+
+
+.links a i {
+  margin: 0.5rem 1rem;
+}
+
+.copyrit {
+  font-size: 0.8rem;
+  padding: 0.7rem 1rem;
+}
+
+/* .........product pages......... */
+
+.spice_box {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cdcd;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  margin-top: 3rem;
+
+}
+
+.sbox {
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+
+.sboxes {
+  width:100%;
+  height: 15rem;
+  margin: 2rem;
+}
+
+.sboxes {
+  width: 100%;
+}
+
+.sboxes img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem 3rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.sboxes .sub_tbox {
+  position: absolute;
+  color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+}
+
+
+
+
+
+
+
